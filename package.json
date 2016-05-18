@@ -1,5 +1,8 @@
 {
   "name": "sourcejs-react-dependencies",
+  "author": {
+    "name": "Norbert de Langen"
+  },
   "version": "0.0.1",
   "description": "SourceJS auto React dependencies builder middleware.",
   "repository": {
