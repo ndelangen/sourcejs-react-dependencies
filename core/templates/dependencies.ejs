@@ -1,0 +1,37 @@
+<div class="source_clean">
+
+	<style>
+		.sourcejs-dependency--container {
+			margin: 20px 0;
+			padding-left: 0;
+		}
+		.sourcejs-dependency--item {
+			list-style: none;
+			overflow: hidden;
+		}
+		.sourcejs-dependency--typelabel {
+			display: inline-block;
+			float: right;
+			margin-left: 14px;
+			line-height: 11px;
+			color: white;
+			padding: 5px 7px;
+		}
+		.sourcejs-dependency--typecss {
+			background: green;
+		}
+		.sourcejs-dependency--typenpm {
+			background: maroon;
+		}
+		.sourcejs-dependency--typemodule {
+			background: blue;
+		}
+	</style>
+
+	<ul class="sourcejs-dependency--container">
+		<% data.forEach(function(item){ %>
+			<li class="sourcejs-dependency--item"><%- item.name %> <span class="sourcejs-dependency--typelabel sourcejs-dependency--type<%- item.type %>"><%- item.type %></span></li>
+		<% }) %>
+	</ul>
+
+</div>

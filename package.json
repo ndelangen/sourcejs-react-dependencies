@@ -1,0 +1,18 @@
+{
+  "name": "sourcejs-react-dependencies",
+  "version": "0.0.1",
+  "description": "SourceJS auto React dependencies builder middleware.",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ndelangen/sourcejs-react-dependencies.git"
+  },
+  "homepage": "https://github.com/ndelangen/sourcejs-react-dependencies",
+  "dependencies": {
+    "babylon": "~5.8.3",
+    "bluebird": "^3.3.5",
+    "ejs": "^2.3.4",
+    "glob-promise": "^1.0.6",
+    "node-source-walk": "^2.1.0",
+    "recast": "^0.10.41"
+  }
+}
