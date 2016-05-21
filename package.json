@@ -3,16 +3,16 @@
   "author": {
     "name": "Norbert de Langen"
   },
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "SourceJS auto React dependencies builder middleware.",
   "repository": {
     "type": "git",
     "url": "https://github.com/ndelangen/sourcejs-react-dependencies.git"
   },
   "homepage": "https://github.com/ndelangen/sourcejs-react-dependencies",
-	"scripts": {
-		"test": "mocha"
-	},
+  "scripts": {
+    "test": "mocha"
+  },
   "dependencies": {
     "babylon": "~5.8.3",
     "bluebird": "^3.3.5",
