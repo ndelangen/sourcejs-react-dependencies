@@ -1,4 +1,4 @@
-var SourceWalker = require('node-source-walk');
+var detective = require('detective-es6');
 
 var detectImportType = function(definition) {
 	switch(true) {
@@ -24,26 +24,11 @@ var groupSimilarTypes = function(list) {
 };
 
 var extract = function(ast) {
-	var walker = new SourceWalker();
-	var results = [];
-
-	walker.walk(ast, function (node) {
-		if (
-			node.type !== 'ImportDeclaration' ||
-			!node.source ||
-			!node.source.value
-		) {
-			return;
-		}
-
-		results.push(node.source.value);
-	});
-
-	return results;
+	return detective(ast);
 };
 
 module.exports = {
-	extract: extract,
-	detectImportType: detectImportType,
-	groupSimilarTypes: groupSimilarTypes
+	extract,
+	detectImportType,
+	groupSimilarTypes
 };
