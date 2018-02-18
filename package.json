@@ -19,7 +19,7 @@
     "detective-es6": "^1.1.3",
     "ejs": "^2.3.4",
     "glob-promise": "^1.0.6",
-    "recast": "^0.10.41"
+    "recast": "^0.13.2"
   },
   "devDependencies": {
     "chai": "^3.5.0",
